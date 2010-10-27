@@ -45,7 +45,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "i18n_scope"
-  s.version           = "0.1.0"
+  s.version           = "0.1.1"
   s.summary           = "Magic scoping for I18n"
   s.author            = "Matthew Rudy Jacobs"
   s.email             = "MatthewRudyJacobs@gmail.com"
