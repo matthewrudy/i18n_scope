@@ -45,7 +45,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "i18n_scope"
-  s.version           = "0.1.1"
+  s.version           = "0.1.2"
   s.summary           = "Magic scoping for I18n"
   s.author            = "Matthew Rudy Jacobs"
   s.email             = "MatthewRudyJacobs@gmail.com"
@@ -63,7 +63,7 @@ spec = Gem::Specification.new do |s|
 
   # If you want to depend on other gems, add them here, along with any
   # relevant versions
-  # s.add_dependency("some_other_gem", "~> 0.1.0")
+  s.add_dependency("i18n")
 
   # If your tests use any gems, include them here
   # s.add_development_dependency("mocha") # for example
