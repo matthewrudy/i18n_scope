@@ -3,7 +3,13 @@ require 'i18n'
 module I18n
   
   def self.scoped(scope=nil)
-    I18n::Scope.new(scope)
+    rtn = I18n::Scope.new(scope)
+    
+    if block_given?
+      yield rtn
+    else
+      rtn
+    end
   end
   
   class Scope
