@@ -45,7 +45,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "i18n_scope"
-  s.version           = "0.1.2"
+  s.version           = "0.1.3"
   s.summary           = "Magic scoping for I18n"
   s.author            = "Matthew Rudy Jacobs"
   s.email             = "MatthewRudyJacobs@gmail.com"
@@ -58,7 +58,7 @@ spec = Gem::Specification.new do |s|
   # s.rdoc_options      = %w(--main README)
 
   # Add any extra files to include in the gem (like your README)
-  s.files             = %w(Rakefile) + Dir.glob("{test,lib/**/*}")
+  s.files             = %w(Rakefile) + Dir.glob("{test,lib}/**/*")
   s.require_paths     = ["lib"]
 
   # If you want to depend on other gems, add them here, along with any

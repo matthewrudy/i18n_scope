@@ -2,13 +2,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{i18n_scope}
-  s.version = "0.1.2"
+  s.version = "0.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matthew Rudy Jacobs"]
-  s.date = %q{2010-10-27}
+  s.date = %q{2010-11-19}
   s.email = %q{MatthewRudyJacobs@gmail.com}
-  s.files = ["Rakefile", "lib/i18n/scope.rb", "lib/i18n_scope.rb"]
+  s.files = ["Rakefile", "test/i18n_scope_test.rb", "test/test_helper.rb", "lib/i18n/scope.rb", "lib/i18n_scope.rb"]
   s.homepage = %q{http://github.com/matthewrudy/i18n_scope}
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
