@@ -1,0 +1,59 @@
+I18nScope
+=========
+
+Make I18n into a callable object, which can be passed around.
+
+Install
+=======
+
+  gem "i18n_scope"
+
+Example
+=======
+
+Instead of having to go
+
+  I18n.t("some.aspect.of.my.app.title")
+  I18n.t("some.aspect.of.my.app.subtitle")
+  I18n.t("some.aspect.of.my.app.sections.first")
+  I18n.t("some.aspect.of.my.app.sections.second")
+
+We can scope I18n once, and pass it around.
+
+  i18n = I18n.scoped("some.aspect.of.my.app")
+  i18n.t("title")
+  i18n.t("subtitle")
+  i18n.t("sections.first")
+  i18n.t("sections.second")
+
+Or we can use a block syntax
+
+  I18n.scoped("some.aspect.of.my.app") do |i18n|
+    i18n.t("title")
+  end
+
+And we can nest these
+
+  I18n.scoped("some.aspect.of.my.app") do |i18n|
+    i18n.t("title")
+    i18n.scoped("sections") do |i18n|
+      i18n.t("first")
+      i18n.t("second")
+    end
+  end
+
+We don't even have to call :t
+
+  i18n = I18n.scoped("some.aspect.of.my.app")
+  i18n.title # to_s  will return the translated value
+
+And I forgot to say, we don't need to use strings at all
+
+  i18n = I18n.scoped.some.aspect.of.my.app
+  i18n.title
+  
+  sections = i18n.sections
+  sections.first
+  sections.second
+
+Copyright (c) 2010 [Matthew Rudy Jacobs], released under the MIT license
