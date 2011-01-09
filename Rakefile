@@ -37,7 +37,7 @@ spec = Gem::Specification.new do |s|
   s.summary           = "Magic scoping for I18n"
   s.author            = "Matthew Rudy Jacobs"
   s.email             = "MatthewRudyJacobs@gmail.com"
-  s.homepage          = "http://github.com/matthewrudy/i18n_scope"
+  s.homepage          = "https://github.com/matthewrudy/i18n_scope"
 
   s.has_rdoc          = true
   s.extra_rdoc_files  = %w(README)
